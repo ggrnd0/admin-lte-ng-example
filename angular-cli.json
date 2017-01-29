@@ -1,0 +1,55 @@
+{
+  "project": {
+    "version": "1.0.0-beta.14",
+    "name": "Competentum.Expert"
+  },
+  "apps": [
+    {
+      "root": "sources/main",
+      "outDir": "processed/main.bundled",
+      "assets": [ "assets" ],
+      "index": "index.html",
+      "main": "main.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.json",
+      "prefix": "app",
+      "mobile": false,
+      "styles": [
+        "../../node_modules/bootstrap/dist/css/bootstrap.css",
+        "../../node_modules/font-awesome/css/font-awesome.css",
+        "../../node_modules/admin-lte/dist/css/AdminLTE.css",
+        "../../node_modules/admin-lte/dist/css/skins/skin-blue.css",
+        "../../node_modules/toastr/build/toastr.css",
+        "styles.css"
+      ],
+      "scripts": [
+        "../../node_modules/lodash/lodash.js",
+        "../../node_modules/jquery/dist/jquery.js",
+        "../../node_modules/bootstrap/dist/js/bootstrap.js",
+        "../../node_modules/toastr/build/toastr.min.js",
+        "../../node_modules/admin-lte/dist/js/app.js"
+      ],
+      "environments": {
+        "source": "environments/environment.ts",
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "addons": [],
+  "packages": [],
+  "e2e": {
+    "protractor": {
+      "config": "./config/protractor.conf.js"
+    }
+  },
+  "test": {
+    "karma": {
+      "config": "./config/karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "prefixInterfaces": false
+  }
+}
